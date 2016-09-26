@@ -1,0 +1,198 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+@import 'font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
+
+/*
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+
+	@include skel-breakpoints((
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 980px)',
+		small: '(max-width: 736px)',
+		xsmall: '(max-width: 480px)',
+		xxsmall: '(max-width: 360px)'
+	));
+
+	@include skel-layout((
+		reset: 'full',
+		boxModel: 'border',
+		grid: ( gutters: 2em ),
+		breakpoints: (
+			large: (
+				grid: ( gutters: 1.5em )
+			),
+			small: (
+				grid: ( gutters: 1.25em )
+			)
+		)
+	));
+
+	@mixin inner {
+		> .inner {
+			@include padding(4em, 0);
+			margin: 0 auto;
+			max-width: _size(inner);
+			width: calc(100% - 6em);
+
+			@include breakpoint(small) {
+				@include padding(3em, 0);
+				width: calc(100% - 3em);
+			}
+		}
+	}
+
+// Base.
+
+	@import 'base/page';
+	@import 'base/typography';
+
+// Component.
+
+	@import 'components/section';
+	@import 'components/form';
+	@import 'components/box';
+	@import 'components/icon';
+	@import 'components/image';
+	@import 'components/list';
+	@import 'components/table';
+	@import 'components/button';
+	@import 'components/tiles';
+	@import 'components/contact-method';
+	@import 'components/spotlights';
+
+// Layout.
+
+	@import 'layout/header';
+	@import 'layout/banner';
+	@import 'layout/main';
+	@import 'layout/contact';
+	@import 'layout/footer';
+	@import 'layout/wrapper';
+	@import 'layout/menu';
+
+	.card-padding {
+    padding: 4em 3em 2em 3em;
+	}
+
+/* Features */
+
+	.features {
+		@include vendor('display', 'flex');
+		@include vendor('flex-wrap', 'wrap');
+		@include vendor('justify-content', 'center');
+		list-style: none;
+		padding: 0;
+		width: 100%;
+
+		li {
+			@include padding(4em, 4em, (0,0,0,2em));
+			display: block;
+			position: relative;
+			text-align: left;
+			width: 50%;
+
+			@for $i from 1 through 10 {
+				$j: 0.035 * $i;
+
+				&:nth-child(#{$i}) {
+					background-color: rgba(0,0,0, $j);
+				}
+			}
+
+			&:before {
+				display: block;
+				// color: _palette(accent2, bg);
+				position: absolute;
+				left: 1.75em;
+				top: 2.75em;
+				font-size: 1.5em;
+			}
+
+			&:nth-child(1) {
+				border-top-left-radius: 3px;
+			}
+
+			&:nth-child(2) {
+				border-top-right-radius: 3px;
+			}
+
+			&:nth-last-child(1) {
+				border-bottom-right-radius: 3px;
+			}
+
+			&:nth-last-child(2) {
+				border-bottom-left-radius: 3px;
+			}
+
+			@include breakpoint(medium) {
+				@include padding(3em, 2em);
+				text-align: center;
+
+				&:before {
+					left: 0;
+					margin: 0 0 (_size(element-margin) * 0.5) 0;
+					position: relative;
+					top: 0;
+				}
+			}
+
+			@include breakpoint(small) {
+				@include padding(3em, 0);
+				background-color: transparent !important;
+				border-top: solid 2px _palette(border);
+				width: 100%;
+
+				&:first-child {
+					border-top: 0;
+				}
+			}
+		}
+	}
+
+	// .more {
+	// 	// @include vendor('transition', ('transform 0.75s ease', 'opacity 0.75s ease'));
+	// 	// @include vendor('transition-delay', '3.5s');
+	// 	// @include vendor('transform', 'translateY(0)');
+	// 	border: none;
+	// 	bottom: 0;
+	// 	color: inherit;
+	// 	// font-size: 0.8em;
+	// 	height: 6.5em;
+	// 	left: 50%;
+	// 	// letter-spacing: _size(letter-spacing-alt);
+	// 	margin-left: -8.5em;
+	// 	opacity: .5;
+	// 	outline: 0;
+	// 	// padding-left: _size(letter-spacing-alt);
+	// 	position: absolute;
+	// 	text-align: center;
+	// 	text-transform: uppercase;
+	// 	width: 16em;
+	// 	z-index: 1;
+
+	// 	&:after {
+	// 		@include vendor('transition', 'opacity #{_duration(banner)} ease');
+	// 		@include vendor('transition-delay', '0.75s');
+	// 		@include vendor('pointer-events', 'none');
+	// 		background-image: url('../../images/arrow.svg');
+	// 		background-position: center;
+	// 		background-repeat: no-repeat;
+	// 		background-size: contain;
+	// 		bottom: 3em;
+	// 		content: '';
+	// 		display: block;
+	// 		height: 1.5em;
+	// 		left: 50%;
+	// 		margin: 0 0 0 -0.75em;
+	// 		position: absolute;
+	// 		width: 1.5em;
+	// 	}
+	// }
