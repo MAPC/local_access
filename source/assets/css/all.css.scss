@@ -78,10 +78,6 @@
 	@import 'layout/wrapper';
 	@import 'layout/menu';
 
-	.card-padding {
-    padding: 4em 3em 2em 3em;
-	}
-
 /* Features */
 
 	.features {
@@ -156,43 +152,3 @@
 			}
 		}
 	}
-
-	// .more {
-	// 	// @include vendor('transition', ('transform 0.75s ease', 'opacity 0.75s ease'));
-	// 	// @include vendor('transition-delay', '3.5s');
-	// 	// @include vendor('transform', 'translateY(0)');
-	// 	border: none;
-	// 	bottom: 0;
-	// 	color: inherit;
-	// 	// font-size: 0.8em;
-	// 	height: 6.5em;
-	// 	left: 50%;
-	// 	// letter-spacing: _size(letter-spacing-alt);
-	// 	margin-left: -8.5em;
-	// 	opacity: .5;
-	// 	outline: 0;
-	// 	// padding-left: _size(letter-spacing-alt);
-	// 	position: absolute;
-	// 	text-align: center;
-	// 	text-transform: uppercase;
-	// 	width: 16em;
-	// 	z-index: 1;
-
-	// 	&:after {
-	// 		@include vendor('transition', 'opacity #{_duration(banner)} ease');
-	// 		@include vendor('transition-delay', '0.75s');
-	// 		@include vendor('pointer-events', 'none');
-	// 		background-image: url('../../images/arrow.svg');
-	// 		background-position: center;
-	// 		background-repeat: no-repeat;
-	// 		background-size: contain;
-	// 		bottom: 3em;
-	// 		content: '';
-	// 		display: block;
-	// 		height: 1.5em;
-	// 		left: 50%;
-	// 		margin: 0 0 0 -0.75em;
-	// 		position: absolute;
-	// 		width: 1.5em;
-	// 	}
-	// }
