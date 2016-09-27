@@ -153,6 +153,23 @@
 		}
 	}
 
+	[data-aload] { background-image: none !important; }
+	
 	.banner-bg {
+
 		background-image: url("../../images/LAS.jpg");
+
+	}
+
+	.use-cases {
+		text-align: center;
+		font-size: 1.2em;
+		opacity: 0.75;
+		margin: 0 auto;
+	}
+
+	.use-cases-hr {
+		text-align:center; 
+		margin: 25px auto;
+		width:30%;
 	}

@@ -17,7 +17,7 @@
 					<h1>Local Access Score</h1>
 				</header>
 				<div class="content">
-					<p>MAPC's Local Access Score helps planners and policymakers prioritize sidewalk and transportation infrastructure investments by mapping latent transportation demand.
+					<p>MAPC's Local Access Score helps planners and policymakers prioritize sidewalk and transportation infrastructure investments by mapping potential transportation demand.
 					</p>
 					<ul class="actions">
 						<li><a href="http://bit.ly/LocalAccess" class="button next scrolly">Explore the score</a></li>
@@ -30,14 +30,14 @@
 				<section id="two">
 					<div class="inner">
 						<header class="major">
-							<h2>Use the Score in your Community</h2>
+							<h2>What is the Local Access Score?</h2>
 						</header>
-						<p>Communities across Massachusetts are looking for ways to make walking and biking a safer, healthier, and more convenient way to get around. There is a growing movement toward the creation of “Complete Streets” designed to accommodate travelers of all ages, incomes, and abilities, whether they are walking, biking, riding transit, or in a car. As of June 2016, nearly one-fifth of the municipalities in Massachusetts have adopted Complete Streets policies1 and are participating in a Massachusetts Department of Transportation (MassDOT) program to implement those policies through capital investments. Given the urgent need and limited funds, it is critical for municipalities to focus and prioritize their investments where they will have the biggest impacts on safety, convenience, and congestion relief.<br>
+						<p>Communities across Massachusetts are looking for ways to make walking and biking a safer, healthier, and more convenient way to get around. There is a growing movement toward the creation of “Complete Streets” designed to accommodate travelers of all ages, incomes, and abilities, whether they are walking, biking, riding transit, or in a car. As of June 2016, nearly one-fifth of the municipalities in Massachusetts have adopted Complete Streets policies and are participating in a Massachusetts Department of Transportation (MassDOT) program to implement those policies through capital investments. Given the urgent need and limited funds, it is critical for municipalities to focus and prioritize their investments where they will have the biggest impacts on safety, convenience, and congestion relief.</p>
+
+						<p>While it is clear that investments should be made where they can benefit the greatest number of users, there are few measures of active transportation utility for any given stretch of road. As in, if this were a good place to walk or bike, would many people find it a useful route between point A and point B?</p>
 						
-						<br>While it is clear that investments should be made where they can benefit the greatest number of users, there are few measures of active transportation utility for any given stretch of road. As in, if this were a good place to walk or bike, would many people find it a useful route between point A and point B?
-						
-						<br>Local Access is a tool developed to help answer this question. This measure provides a robust, quantitative estimate of current or potential roadway utility for walkers and bikers. The active transportation network utility score for each segment of roadway indicates how useful that street segment is for connecting residents with schools, shops, restaurants, parks, and transit stations.
-						</p>
+						<p>Local Access is a tool developed to help answer this question. This measure provides a robust, quantitative estimate of current or potential roadway utility for walkers and bikers. The active transportation network utility score for each segment of roadway indicates how useful that street segment is for connecting residents with schools, shops, restaurants, parks, and transit stations.</p>
+						<br/>
 					</div>
 				</section>
 
@@ -45,149 +45,47 @@
 
 	<!-- Main -->
 		<div id="main">
+			<section id="two">
+				<div class="inner">
+					<header class="major">
+						<h2>How is this used?</h2>
+					</header>
+				</div>
+			</section>
+
 			<!-- One -->
 				<section id="one" class="tiles">
-					<article>
-						<span class="image">
-							<img  src="images/planning_priorities.jpg" alt="" />
-						</span>
-						<header class="major">
-							<h3><div class="link">Planning and Prioritization</div></h3>
-							<p>Local complete streets prioritization plans or pedestrian and bike plans can use the data to identify locations in need of improvement.</p>
-						</header>
-					</article>
-					<article>
-						<span class="image">
-							<img src="images/completestreets.jpg" alt="" />
-						</span>
-						<header class="major">
-							<h3><div class="link">Pedestrian & Bike Assessments</div></h3>
-							<p>Field investigation or documentation of local pedestrian conditions should focus on high-utility roadway segments likely to be used by the largest number of local residents.</p>
-						</header>
-					</article>
-
-					<article>
-						<span class="image">
-							<img src="https://unsplash.it/800/600/?random" alt="" />
-						</span>
-						<header class="major">
-							<h3><div class="link">Maintenance & Enforcement</div></h3>
-							<p>Local Access scores can be used to inform operational plans for snow clearance, vegetation management, or routine repair.</p>
-						</header>
-					</article>
-
-					<article>
-						<span class="image">
-							<img src="https://unsplash.it/800/600/?random" alt="" />
-						</span>
-						<header class="major">
-							<h3><div class="link">Project Selection</div></h3>
-							<p>Local Access scores can be used to screen the projects & possibly eliminate those likely to serve a relatively small number of users.</p>
-						</header>
-					</article>
-
-					<article>
-						<span class="image">
-							<img src="https://unsplash.it/800/600/?random" alt="" />
-						</span>
-						<header class="major">
-							<h3><div class="link">Wayfinding</div></h3>
-							<p>Wayfinding programs can use the data to place signs where many people will pass, or at key intersections where walkers might be redirected to a recommended pedestrian route</p>
-						</header>
-					</article>
-					<article>
-						<span class="image">
-							<img src="https://unsplash.it/800/600/?random" alt="" />
-						</span>
-						<header class="major">
-							<h3><div class="link">Pedestrian Counts & Performance Measurement</div></h3>
-							<p>Local Access utility scores can be used to identify groupings of count locations that are representative of an entire municipality or study area.</p>
-						</header>
-					</article>
+					<%- data.tiles.articles.each do |r| %>
+						<article>
+							<span class="image">
+								<img src=<%= r.image %> alt="" />
+							</span>
+							<header class="major">
+								<h3><div class="link"><%= r.name %></div></h3>
+								<p><%= r.description %></p>
+							</header>
+						</article>
+					<%- end %>
 				</section>
 
 			<!-- Two -->
 				<section id="two">
 					<div class="inner">
 						<header class="major">
-							<h2>Filling the Data Gap</h2>
+							<h2>Data & Methodology</h2>
 						</header>
-						<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+						<p>Local Access scores are calculated using travel demand software that uses input data on population and destinations to estimate the number of trips households are likely to make in a given day, the likely destinations of those trips, and the most direct routes connecting households to their destinations.
+						</p>
 						<ul class="actions">
-							<li><a href="landing.html" class="button next">Get Started</a></li>
+							<li><a href="https://mapc-org.sharefile.com/share?#/getinfo/s22be08281414f498" class="button next scrolly">Download the Data</a></li>
+							<li><a href="methodology.html" class="button next">Read the Methodology</a></li>
 						</ul>
 					</div>
 				</section>
-
+			<%= partial "footer" %>
 		</div>
 
-	<!-- Contact -->
-		<section id="contact">
-			<div class="inner">
-				<section>
-					<form method="post" action="#">
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="special" /></li>
-							<li><input type="reset" value="Clear" /></li>
-						</ul>
-					</form>
-				</section>
-				<section class="split">
-					<section>
-						<div class="contact-method">
-							<span class="icon alt fa-envelope"></span>
-							<h3>Email</h3>
-							<a href="#">information@untitled.tld</a>
-						</div>
-					</section>
-					<section>
-						<div class="contact-method">
-							<span class="icon alt fa-phone"></span>
-							<h3>Phone</h3>
-							<span>(000) 000-0000 x12387</span>
-						</div>
-					</section>
-					<section>
-						<div class="contact-method">
-							<span class="icon alt fa-home"></span>
-							<h3>Address</h3>
-							<span>1234 Somewhere Road #5432<br />
-							Nashville, TN 00000<br />
-							United States of America</span>
-						</div>
-					</section>
-				</section>
-			</div>
-		</section>
 
-	<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled</li>
-					<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-					
-				</ul>
-			</div>
-		</footer>
+
 
 </div>

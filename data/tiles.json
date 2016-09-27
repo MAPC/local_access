@@ -1,0 +1,34 @@
+{
+  "articles": [
+    { 
+      "name": "Planning and Prioritization",
+      "description": "Local Access Score can inform complete streets prioritization plans or pedestrian and bike plans by identifying locations in need of improvement.",
+      "image": "images/planning_priorities.jpg"
+    },
+    { 
+      "name": "Pedestrian & Bike Assessments",
+      "description": "Field investigation or documentation of local pedestrian conditions should focus on high-utility roadway segments likely to be used by the largest number of local residents.",
+      "image": "images/completestreets.jpg"
+    },
+    { 
+      "name": "Maintenance & Enforcement",
+      "description": "Local Access scores can be used to inform operational plans for snow clearance, vegetation management, or routine repair.",
+      "image": "https://unsplash.it/800/600/?random"
+    },
+    { 
+      "name": "Project Selection",
+      "description": "Local Access scores can be used to screen the projects & possibly eliminate those likely to serve a relatively small number of users.",
+      "image": "https://unsplash.it/800/600/?random"
+    },
+    { 
+      "name": "Wayfinding",
+      "description": "Wayfinding programs can use the data to place signs where many people will pass, or at key intersections where walkers might be redirected to a recommended pedestrian route",
+      "image": "https://unsplash.it/800/600/?random"
+    },
+    { 
+      "name": "Pedestrian Counts & Performance Measurement",
+      "description": "Local Access utility scores can be used to identify groupings of count locations that are representative of an entire municipality or study area.",
+      "image": "https://unsplash.it/800/600/?random"
+    }
+  ]
+}
