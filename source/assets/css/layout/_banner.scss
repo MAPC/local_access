@@ -27,7 +27,7 @@
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('pointer-events', 'none');
 			background-color: _palette(bg);
-			background-image: url("../../images/LAS.png");
+			background-image: url("../../images/LAS.jpg");
 			content: '';
 			display: block;
 			height: 100%;
