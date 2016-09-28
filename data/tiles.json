@@ -2,7 +2,7 @@
   "articles": [
     { 
       "name": "Planning and Prioritization",
-      "description": "Local Access Scores can inform complete streets prioritization plans or pedestrian and bike plans by identifying locations in need of improvement.",
+      "description": "The Local Access Score can inform complete streets prioritization plans or pedestrian and bike plans by identifying locations in need of improvement.",
       "image": "images/planning_priorities.jpg"
     },
     { 
@@ -12,22 +12,22 @@
     },
     { 
       "name": "Maintenance & Enforcement",
-      "description": "Local Access scores can be used to inform operational plans for snow clearance, vegetation management, or routine repair.",
+      "description": "The Local Access Score can be used to inform operational plans for snow clearance, vegetation management, or routine repair, and to prioritize code enforcement.",
       "image": "images/maintenance.jpg"
     },
     { 
       "name": "Project Selection",
-      "description": "Local Access scores can be used to screen the projects & possibly eliminate those likely to serve a relatively small number of users.",
+      "description": "The Local Access Score can be used to screen the projects & possibly eliminate those likely to serve a relatively small number of users.",
       "image": "images/construction.jpg"
     },
     { 
       "name": "Wayfinding",
-      "description": "Wayfinding programs can use the data to place signs where many people will pass, or at key intersections where walkers might be redirected to a recommended pedestrian route",
+      "description": "Wayfinding programs can use the data to place signs where many people will pass, or at key intersections where walkers might be redirected to a recommended pedestrian route.",
       "image": "images/wayfinding.jpg"
     },
     { 
       "name": "Pedestrian Counts & Performance Measurement",
-      "description": "Local Access utility scores can be used to identify groupings of count locations that are representative of an entire municipality or study area.",
+      "description": "The Local Access Score can be used to identify groupings of count locations that are representative of an entire municipality or study area.",
       "image": "images/placemeter.png"
     }
   ]
