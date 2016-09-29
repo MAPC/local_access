@@ -35,7 +35,7 @@
   <ul class="links">
     <li><a href="/">Home</a></li>
     <li><a href="http://bit.ly/LocalAccess" target="_blank">Explore the Score</a></li>
-    <li><a href="https://mapc-org.sharefile.com/d-sea9749bc3734035a" target="_blank">Download the Data</a></li>
+    <li><a href="https://mapc-org.sharefile.com/d-sea9749bc3734035a" onclick="ga('send', 'event', 'Downloads', 'Click Download Data', 'Download LAS Data');" target="_blank">Download the Data</a></li>
     <li><a href="methodology.html">Methodology</a></li>
   </ul>
 </nav>
@@ -288,6 +288,7 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/autotrack.js"></script>
     <script>
       function aload(t){"use strict";var e="data-aload";return t=t||window.document.querySelectorAll("["+e+"]"),void 0===t.length&&(t=[t]),[].forEach.call(t,function(t){t["LINK"!==t.tagName?"src":"href"]=t.getAttribute(e),t.removeAttribute(e)}),t}
 
@@ -301,6 +302,9 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-5547782-25', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
       ga('send', 'pageview');
     </script>
   </body>

@@ -35,7 +35,7 @@
   <ul class="links">
     <li><a href="/">Home</a></li>
     <li><a href="http://bit.ly/LocalAccess" target="_blank">Explore the Score</a></li>
-    <li><a href="https://mapc-org.sharefile.com/d-sea9749bc3734035a" target="_blank">Download the Data</a></li>
+    <li><a href="https://mapc-org.sharefile.com/d-sea9749bc3734035a" onclick="ga('send', 'event', 'Downloads', 'Click Download Data', 'Download LAS Data');" target="_blank">Download the Data</a></li>
     <li><a href="methodology.html">Methodology</a></li>
   </ul>
 </nav>
@@ -52,7 +52,7 @@
 					<p>MAPC’s Local Access Score helps Massachusetts communities prioritize sidewalk and bike route improvements on the most useful connections between residents and important local destinations.
 					</p>
 					<ul class="actions">
-						<li><a href="http://bit.ly/LocalAccess" target="_blank" class="button next scrolly">Explore the score</a></li>
+						<li><a href="http://bit.ly/LocalAccess" target="_blank" onclick="ga('send', 'event', 'Map', 'Click Map Link');" class="button next scrolly">Explore the score</a></li>
 					</ul>
 				</div>
 			</div>
@@ -153,8 +153,8 @@
 						<p>Local Access Scores are available via an interactive online map and as a downloadable dataset that can be viewed and customized using GIS software. Follow the download link below to get the data; you will be prompted to provide your name and email address so we can provide you with updates when they become available. The User Guide provides a complete data dictionary and tips on working with the data.
 						</p>
 						<ul class="actions">
-							<li><a href="https://mapc-org.sharefile.com/d-sea9749bc3734035a" target="_blank" class="button next scrolly">Download the Data</a></li>
-							<li><a href="assets/pdfs/LocalAccess_User_Guide.pdf" target="_blank" class="button next scrolly">Get the User Guide</a></li>
+							<li><a href="https://mapc-org.sharefile.com/d-sea9749bc3734035a" onclick="ga('send', 'event', 'Downloads', 'Click Download Data', 'Download LAS Data');" target="_blank" class="button next scrolly">Download the Data</a></li>
+							<li><a href="assets/pdfs/LocalAccess_User_Guide.pdf" onclick="ga('send', 'event', 'User Guide', 'Click User Guide');" target="_blank" class="button next scrolly">Get the User Guide</a></li>
 							<li><a href="methodology.html" class="button next">Read the Methodology</a></li>
 						</ul>
 					</div>
@@ -172,7 +172,7 @@
 							<p>Do you need help interpreting Local Access Scores or developing a pedestrian prioritization plan?  MAPC provides technical assistance to cities and towns working to create complete streets. We can assist you with planning, assessment, and public engagement related to pedestrian and bike planning. MAPC can also customize the model to incorporate detailed local information about unmapped or informal pedestrian routes, sidewalk availability, or key destinations. Contact us to learn more.</p>
 							<ul class="actions">
 								<li><a href="mailto:data@mapc.org" class="button">Contact Us</a></li>
-								<li><a href="http://data.mapc.org" target="_blank" class="button">Visit Data.mapc.org</a></li>
+								<li><a href="http://data.mapc.org" target="_blank" onclick="ga('send', 'event', 'Data.Mapc.Org', 'Go to Data.Mapc.Org');" class="button">Visit Data.mapc.org</a></li>
 							</ul>
 						</div>
 					</div>
@@ -210,6 +210,7 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/autotrack.js"></script>
     <script>
       function aload(t){"use strict";var e="data-aload";return t=t||window.document.querySelectorAll("["+e+"]"),void 0===t.length&&(t=[t]),[].forEach.call(t,function(t){t["LINK"!==t.tagName?"src":"href"]=t.getAttribute(e),t.removeAttribute(e)}),t}
 
@@ -223,6 +224,9 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-5547782-25', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
       ga('send', 'pageview');
     </script>
   </body>
